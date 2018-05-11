@@ -30,7 +30,6 @@ public class User {
      * This method returns the value of the database column user.id
      *
      * @return the value of user.id
-     *
      * @mbggenerated
      */
     public Long getId() {
@@ -42,7 +41,6 @@ public class User {
      * This method sets the value of the database column user.id
      *
      * @param id the value for user.id
-     *
      * @mbggenerated
      */
     public void setId(Long id) {
@@ -54,7 +52,6 @@ public class User {
      * This method returns the value of the database column user.username
      *
      * @return the value of user.username
-     *
      * @mbggenerated
      */
     public String getUsername() {
@@ -66,7 +63,6 @@ public class User {
      * This method sets the value of the database column user.username
      *
      * @param username the value for user.username
-     *
      * @mbggenerated
      */
     public void setUsername(String username) {
@@ -78,7 +74,6 @@ public class User {
      * This method returns the value of the database column user.password
      *
      * @return the value of user.password
-     *
      * @mbggenerated
      */
     public String getPassword() {
@@ -90,10 +85,10 @@ public class User {
      * This method sets the value of the database column user.password
      *
      * @param password the value for user.password
-     *
      * @mbggenerated
      */
     public void setPassword(String password) {
         this.password = password == null ? null : password.trim();
     }
+
 }

@@ -23,4 +23,17 @@ public class UserServiceImpl implements UserService {
         BeanUtils.copyProperties(user, userVo);
         return userVo ;
     }
+
+    @Override
+    public int insertNoTransaction() {
+        User a = new User() ;
+        a.setUsername("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        userMapper.insertSelective(a) ;
+//        User b = new User() ;
+//        b.setUsername("b");
+//        userMapper.insertSelective(b) ;
+//        int ab = 0 ;
+
+        return 0 ;
+    }
 }

@@ -24,6 +24,7 @@ public class TestController {
     @RequestMapping("/query.action")
     public ModelAndView query() {
         UserVo result = userService.queryById(1) ;
+        //userService.insertNoTransaction() ;
         //userManager.testTransaction();
         ModelAndView modelAndView = new ModelAndView("/index.jsp") ;
         System.out.println("啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊\n\n啊啊啊啊啊啊啊啊啊啊啊啊");
